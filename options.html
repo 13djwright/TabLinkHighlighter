@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Options</title>
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+
+form{
+	margin-bottom: 15px;
+}
+
+#main{
+	left: 50%;
+	top: 10%;
+	border: solid 2px white;
+	width: 500px;
+	margin-left: -250px;
+	height: 400px;
+	background-color: #ddd;
+	position: fixed;
+	padding: 10px;
+}
+
+body{
+	background-color: #ffffff;
+}
+</style>
+	</head>
+	<body>
+	<div id="main">
+		<p>Change the text in this box to change what matching links color will change to.</p>
+		<form>
+			Color: <input class="color {required:false,adjust:false}" type="text" name="colorChanged" id="color"/>
+		</form>
+		<p>Select whether you want the link or the background to change.</p>
+		<form>
+		  <input type="radio" name="highlight-type" id="background" value="background" checked/>Highlight background<br/>
+		  <input type="radio" name="highlight-type" id="link" value="link"/>Change link's color
+		</form>
+		<p>Check if you want the console to print links it found (note, this prints constantly every half second).</p>
+		<form>
+			Debug On/Off
+			<input type="checkbox" id="debug">
+		</form>
+		<div id="status"></div>
+		<button id="save">Save</button>
+	</div>
+		<script src="options.js"></script>
+		<script src="jscolor/jscolor.js"></script>
+	</body>
+</html>
