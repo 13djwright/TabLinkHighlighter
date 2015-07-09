@@ -5,3 +5,7 @@ Chrome extension used to increase productivity by highlighting links from search
 You can see a more indepth description on the Chrome Webstore by going here: https://chrome.google.com/webstore/detail/tab-link-highlighter/kpjehednbhelpnmmakipknogigipcehf?hl=en-US
 
 Useful for when researching the same subject and opening multiple tabs. 
+
+## Contributors (listed alphabetically by last name) ##
+
+Devin Wright
